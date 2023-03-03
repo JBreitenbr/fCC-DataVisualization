@@ -20,14 +20,14 @@ h4 {
 #canvas {
           width: 750px; 
           height: 880px; 
-          border: 1px solid darkred;
-         /* background-color: white;*/
+          border: 2px solid darkred;
         }
 
 @media screen and (max-width: 800px){
   #canvas {
     width: 500px;
     height: 650px;
+    border: 1.5px solid darkred;
   }
   h4 {
     margin-top: 70px;
@@ -40,6 +40,7 @@ h4 {
   #canvas {
     width: 350px;
     height: 500px;
+    border: 1px solid darkred;
   }
   h4 {
     margin-top: 50px;
