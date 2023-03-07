@@ -1,0 +1,43 @@
+/*  html {
+  height: 100%;
+  width: 100%;
+} */
+
+body {
+       background-color: #eee;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       font-family: Oxygen;
+     }
+
+h3,h5 {
+  text-align: center;
+}
+
+#canvas {
+          width: 750px; 
+          height: 880px; 
+        }
+
+@media screen and (max-width: 800px){
+  #canvas {
+    width: 500px;
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  #canvas {
+    width: 350px;
+    height: 500px;
+  }
+}
+
+#tooltip {
+  color: darkblue;
+  padding: 5px;
+  position: absolute;
+ 
+}
