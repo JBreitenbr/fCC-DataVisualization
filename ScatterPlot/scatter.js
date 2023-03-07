@@ -46,13 +46,13 @@ let legbox=canvas.append('g').attr("id","legend");
 
 legbox.append('rect').attr("x",3/7*w).attr("y",0.8*h).attr("width",33/7*w).attr("height",0.1*h).attr("fill","transparent");
 
-legbox.append('rect').attr("x",(w-pad)/2).attr("y",0.8*h).attr("width",w/30).attr("height",w/30).attr("fill","orange");
+legbox.append('rect').attr("x",(w-pad)/2+w/16).attr("y",0.8*h).attr("width",w/30).attr("height",w/30).attr("fill","orange");
 
 legbox.append("text").text("doping allegations").style("text-anchor", "end")
     .attr("x",w-pad)
     .attr("y", 0.8*h+w/30).style("font",`${w/30}px arial`);
 
-legbox.append('rect').attr("x",(w-pad)/2).attr("y",0.83*h).attr("width",w/30).attr("height",w/30).attr("fill","darkgreen");
+legbox.append('rect').attr("x",(w-pad)/2+w/16).attr("y",0.83*h).attr("width",w/30).attr("height",w/30).attr("fill","darkgreen");
 
 legbox.append("text").text("no doping allegations").style("text-anchor", "end")
     .attr("x",w-pad)
