@@ -44,7 +44,7 @@ canvas.append('g').call(yAxis).attr('id','y-axis').attr('transform',`translate($
 
 let legbox=canvas.append('g').attr("id","legend");
 
-legbox.append('rect').attr("x",3/7*w).attr("y",0.8*h).attr("width",33/7*w).attr("height",0.1*h).attr("fill","transparent");
+legbox.append('rect').attr("x",3/7*w).attr("y",0.8*h).attr("width",3/7*w).attr("height",0.1*h).attr("fill","transparent");
 
 legbox.append('rect').attr("x",(w-pad)/2+w/16).attr("y",0.8*h).attr("width",w/30).attr("height",w/30).attr("fill","orange");
 
@@ -63,7 +63,7 @@ canvas.append("text").text("Time in Minutes").style("text-anchor","end"). attr("
 let toolTip=d3.select("#tooltip");
 
 let mouseover = (d,i)=>{
-    toolTip.style("visibility","visible").html("Name: "+i["Name"]+"<br>" + "Time: "+i["Time"]+"<br>"+"Year: "+i["Year"]+"<br>"+"Nationality: "+i["Nationality"]+"<br>").attr("data-year",i["Year"]).attr("data-time",i["Time"]).style("font",`${w/44}px arial`).style("color","darkblue").style("border","1px solid darkblue").style("background-color", "papayawhip").style("left",xScale(i["Year"])+"px").style("top",(h+10-pad-yScale(timeParse(i["Time"])))+"px");
+    toolTip.style("visibility","visible").html("Name: "+i["Name"]+"<br>" + "Time: "+i["Time"]+"<br>"+"Year: "+i["Year"]+"<br>"+"Nationality: "+i["Nationality"]+"<br>").attr("data-year",i["Year"]).attr("data-time",i["Time"]).style("font",`${w/36}px arial`).style("color","darkblue").style("border","1px solid darkblue").style("background-color", "papayawhip").style("left",xScale(i["Year"])+"px").style("top",(h+10-pad-yScale(timeParse(i["Time"])))+"px");
 
 }
 canvas.selectAll('circle')
