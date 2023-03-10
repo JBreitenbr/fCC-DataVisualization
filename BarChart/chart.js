@@ -3,7 +3,7 @@ let dates=values.map((item)=>{return new Date(item[0])});
 let toolTip=d3.select("body").append("div").style("visibility","hidden").style("position","absolute").style("background-color","white").attr("id","tooltip");
 
 let mouseover = (d,i)=>{
-    /*let pos=d3.pointer(mouseover);*/
+    
     toolTip.style("visibility","visible").html(i[0]+"<br>$" + i[1]).attr("data-date",i[0]).attr("data-gdp",i[1]);}
 
 let w=+d3.select("#canvas").style("width").slice(0,-2);
@@ -18,7 +18,7 @@ let xAxisScale=d3.scaleTime().domain([d3.min(dates),d3.max(dates)]).range([pad,w
 let yAxisScale=d3.scaleLinear().domain([0,d3.max(values,(item)=>{return item[1]})]).range([h-pad,pad]); 
 
 let xAxis=d3.axisBottom(xAxisScale).ticks(6);
-let yAxis=d3.axisLeft(yAxisScale);
+let yAxis=d3.axisLeft(yAxisScale).tickFormat(d3.format('d'));
 let canvas=d3.select('#canvas');
 
 canvas.append('g').style("font",`${w/35}px times`).call(xAxis).attr('id','x-axis').attr('transform','translate(0,'+(h-pad)+')');
