@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+  width: 100%;
+  }
+body {
+       background-color: #ffffa6 ;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       font-family: Oxygen;
+}
+
+#space-provider {
+  width: 100%;
+  height: 75px;
+}
+
+#canvas {
+          width: 750px; 
+          height: 1200px; 
+        }
+
+@media screen and (max-width: 800px){
+  #canvas {
+    width: 500px;
+    height: 810px;
+  }
+
+  #space-provider {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  #canvas {
+    width: 350px;
+    height: 570px;
+  }
+
+  #space-provider {
+    height: 35px;
+  }
+}
+
+#tooltip {
+  position: absolute;
+  padding: 5px;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
