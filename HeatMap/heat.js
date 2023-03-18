@@ -78,7 +78,7 @@ canvas.append('g').call(xAxis).attr('id','x-axis').attr('transform',"translate(0
     .attr("transform", "rotate(-65)").style("font",`${Math.min((11/350)*w,16)}px arial`);
 
 canvas.append('g').call(yAxis).attr('id','y-axis').attr('transform',"translate("+pad+",0)").style("font",`${(1/57)*h}px arial`);
-canvas.append('g').call(legendAxis).attr("transform","translate(0,"+(54.2/57)*h+")");
+canvas.append('g').call(legendAxis).attr("transform","translate(0,"+(54.2/57)*h+")").style("font",`${(1/70)*h}px arial`);
 canvas.append('text').attr("x",(4/35)*w).attr("y",(3/95)*h).text("Monthly Global Land Surface Temperature").attr("id","title").style("font",`${(16/570)*h}px arial`).attr("fill","darkblue");
 canvas.append('text').attr("x",(9/35)*w).attr("y",(7/95)*h).text("1753 - 2015: base temperature 8.66℃").attr("id","description").style("font",`${(12/570)*h}px arial`).attr("fill","darkblue");
   canvas.selectAll('rect')
