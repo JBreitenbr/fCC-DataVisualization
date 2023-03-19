@@ -20,7 +20,7 @@ const treemap = (data) => d3.treemap()
 let toolTip=d3.select("#tooltip");
 
 let mouseover = (d,i)=>{
-    toolTip.style("visibility","visible").html("$" + i.value+"<br>Category: "+i.data.category+"<br>Title: "+i.data.name+"<br>").attr("data-value",i.value).style("font","12px arial").style("color","darkblue").style("border","1px solid darkred").style("left",i.x1-50+"px").style("top",i.y0+20+"px");
+    toolTip.style("visibility","visible").html("$" + i.value+"<br>Category: "+i.data.category+"<br>Title: "+i.data.name+"<br>").attr("data-value",i.value).style("font","12px arial").style("color","darkblue").style("background-color","papayawhip").style("border","1px solid darkred").style("left",i.x1-50+"px").style("top",i.y0+20+"px");
 }
 let colorSet=["#66c2a5","#7dc0ff","#ff9987","#a6d854","#d6b6d6","#e5c494","#8da0cb"];
 let categories=["Comedy","Action","Drama","Family","Animation","Adventure","Biography"];
