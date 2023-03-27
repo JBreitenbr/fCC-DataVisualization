@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:#dfefef;
+}
+
+#title {
+  text-align: center;
+  font-size: 48px;
+  color: darkblue;
+  margin: 0;
+  padding: 0;
+  font-family: Oxygen;
+}
+
+#description {
+  text-align: center;
+  font-size: 32px;
+  color: darkblue;
+  font-family: Oxygen;
+}
+#canvas {
+          width: 750px; 
+          height: 750px; 
+          border: darkblue solid 3px;
+          background-color: #f0f0f0;
+        }
+
+@media screen and (max-width: 800px){
+  #canvas {
+    width: 500px;
+    height: 500px;
+  }
+  #title {
+    font-size: 32px;
+  }
+  #description {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  #canvas {
+    width: 370px;
+    height: 370px;
+  }
+  #title {
+    font-size: 24px;
+  }
+  #description {
+    font-size: 16px;
+  }
+}
+
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+}
