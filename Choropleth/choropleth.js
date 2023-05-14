@@ -18,7 +18,7 @@ function isInArray(value, array) {
 // The following array contains the ids of cntURL2, which do not have a corresponding fips in the eduURL dataset
 let excl = [46113, 51515, 2280, 2232, 2270, 2201, 72125, 72003, 72097, 72065, 72055, 72083, 72025, 72045, 72133, 72121, 72027, 72033, 72001, 72111, 72047, 72091, 72013, 72145, 72031, 72061, 72129, 72075, 72063, 72073, 72143, 72011, 72081, 72015, 72079, 72009, 72099, 72023, 72109, 72101, 72117, 72005, 72059, 72021, 72141, 72041, 72123, 72131, 72035, 72135, 72115, 72054, 72105, 72017, 72127, 72139, 72057, 72153, 72043, 72149, 72039, 72113, 72107, 72067, 72071, 72007, 72019, 72093, 72151, 72137, 78030, 72089, 72087, 72095, 72119, 72103, 72085, 72029, 72053, 72077, 72037, 72069, 72147, 78010, 72051];
 function drawData() {
-  let albers = d3.geoAlbersUsa()/*.translate([0.5*w,50])*/.fitSize([w,h],cntData2);
+  let albers = d3.geoAlbersUsa().fitSize([w,h],cntData2);
   let geoPath=d3.geoPath().projection(albers);
 ;
   canvas.append('g')
